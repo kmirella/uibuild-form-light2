@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+a{
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+  
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+  
+textarea {
+    resize: none;
+}
+  
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+
+/* END OF CSS RESET*/
+
+
+
+body {
+    background-color: #c0ebf9;
+    font-family: 'Poppins', sans-serif;
+}
+
+#root {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    column-gap: 20px;
+}
+
+@media (max-width: 640px) {
+    #container {
+        max-width: calc(100%-40px);
+    }
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #467745;
+}
+
+@media (max-width: 640px) {
+    h1 {
+        align-self: flex-start;
+    }
+}
+
+.textInput {
+    width: 100%;
+    height: 64px;
+    font-weight: medium;
+    font-size: 16px;
+    background-color: white;
+    color: #467745;
+    padding: 20px;
+    margin: 20px;
+}
+
+.message {
+    width: 100%;
+    font-weight: regular;
+    font-size: 16px;
+    /* flex-wrap: auto; */
+    background-color: white;
+    color: #467745;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.agree {
+    /* display: inline-block; */
+    font-size: 16px;
+    font-weight: normal;
+    color: #467745;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.newsletter {
+/*     display: block;
+    padding-left: 10px;
+ */ font-size: 16px;
+    font-weight: normal;
+    color: #467745; 
+    /* align-self: flex-start; */
+
+}
+
+button {
+    max-width: 280px;
+    height: 80px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 21px;
+    text-align: center;
+    background-color: #467745;
+    color: #c0ebf9;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 20px 80px;
+}
